@@ -8,5 +8,17 @@
 </head>
 <body>
     <div id="app"></div>
+    <noscript><h3>This app need Javascript to work.</h3></noscript>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-Worker.js')
+            .then(registration => {
+                console.log('SW registrated')
+            })
+            .catch(registrationError => {
+                console.log('SW error', registrationError)
+            })
+        }
+    </script>
 </body>
 </html>
