@@ -1,3 +1,3 @@
-## curso-platzi-react-avanzado ⚛️
+## Proyecto del curso-platzi-react-avanzado ⚛️
 
 
